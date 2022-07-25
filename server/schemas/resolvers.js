@@ -51,7 +51,7 @@ const resolvers = {
         },
         removeBook: async (parent, { bookId }, context) => {
             if (context.user) {
-                return Thought.findOneAndUpdate(
+                return User.findOneAndUpdate(
                     { _id: context.user._id },
                     {
                         $pull: {
