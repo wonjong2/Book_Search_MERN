@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 // Adds Apollo Client
 import {
   ApolloClient,
@@ -11,16 +9,10 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-
-
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
-
-
-
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -43,14 +35,8 @@ const authLink = setContext((_, { headers }) => {
 const client = new ApolloClient({
   // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
   link: authLink.concat(httpLink),
-  cache: new InMemoryCache(),
-});
-
-
-
-
-
-
+  cache: new InMemoryCache()
+})
 
 function App() {
   return (

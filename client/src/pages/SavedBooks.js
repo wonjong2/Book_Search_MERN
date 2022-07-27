@@ -30,11 +30,12 @@ const SavedBooks = () => {
     }
 
     try {
+      console.log("removeBook!!!!")
       // Replaces deleteBook() with removeBook mutation
       await removeBook(
         { variables: { bookId } }
       );
-      console.log("removeBook!!!!")
+
       removeBookId(bookId);
     } catch (err) {
       console.error(err);
