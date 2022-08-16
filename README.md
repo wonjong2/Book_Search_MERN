@@ -63,6 +63,10 @@ npm run develop
 
 `Walkthrough Video: ` https://watch.screencastify.com/v/g9Ue7hcvIEaNWJnw5Pjy
 
+![search_book](./images/search_book.png)
+
+![saved_book](./images/saved_book.png)
+
 ## License
 
 Copyright (c) 2022 `wonjong2` (GitHub Username) Licensed under [the MIT License](https://choosealicense.com/licenses/mit/).
